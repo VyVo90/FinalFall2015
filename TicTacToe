@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class tictactoe {
+	public static void main(String args[]) {
+		System.out.println("Welcome to tictactoe game!!");
+		board toe =new board();
+		String ch;
+		//TicTacToe Toe = new TicTacToe();
+		do {
+			toe.newBoard();
+			toe.play();
+			System.out.println("Would you like to play again (Enter 'yes')? ");
+			Scanner in = new Scanner(System.in);
+			ch = in.nextLine();
+		} while (ch.equals("yes"));
+
+	}
+}
